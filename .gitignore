@@ -1,0 +1,4 @@
+# Project exclude paths
+/cloud-client/target/
+/cloud-common/target/
+/cloud-server/target/
