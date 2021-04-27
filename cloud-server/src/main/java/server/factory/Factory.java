@@ -29,7 +29,6 @@ public class Factory {
     }
 
     public static List<FileProcessable> getFileProcessable() {
-
         return Arrays.asList(new CopyFileFromServer(), new MoveFileFromServer(), new DeleteFileInServer());
     }
 

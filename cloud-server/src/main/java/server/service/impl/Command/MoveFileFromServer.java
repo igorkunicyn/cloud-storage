@@ -25,7 +25,6 @@ public class MoveFileFromServer implements FileProcessable {
         SQLHandler.getDeleteFromStorage(nickname,name_file,path);
         return new FileUpload(name_file,in,bytes);
     }
-
     @Override
     public String getCommand() {
         return Command.MOVE.getInstruction();

@@ -25,6 +25,5 @@ public class FileUpload implements Serializable {
     public byte[] getBytes() {
         return bytes;
     }
-
 }
 

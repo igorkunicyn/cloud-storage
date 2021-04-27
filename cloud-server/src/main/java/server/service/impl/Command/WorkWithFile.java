@@ -27,7 +27,6 @@ public class WorkWithFile implements CommandFileProcessable {
         return commandProcessFile;
     }
 
-
     @Override
     public FileUpload commandProcessFile(String command) {
         String[] commandParts = command.split("\\s");

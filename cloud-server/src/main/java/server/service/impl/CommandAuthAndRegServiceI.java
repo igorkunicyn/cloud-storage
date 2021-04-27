@@ -27,7 +27,6 @@ public class CommandAuthAndRegServiceI implements CommandAuthAndRegService {
 
         return commandDictionary;
     }
-
     @Override
     public String processCommand(String command) {
         String[] commandParts = command.split("\\s");

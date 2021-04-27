@@ -25,7 +25,6 @@ public class AuthClientCommand implements CommandService {
             return "Неверный логин / пароль";
         }
     }
-
     @Override
     public String getCommand() {
         return Command.AUTH.getInstruction();

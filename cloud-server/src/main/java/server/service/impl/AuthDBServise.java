@@ -14,7 +14,7 @@ public class AuthDBServise implements AuthDBService {
         return SQLHandler.registration(login, password, nickname);
     }
 
-        @Override
+    @Override
     public boolean changeNick(String oldNickname, String newNickname) {
         return SQLHandler.changeNick(oldNickname, newNickname);
     }

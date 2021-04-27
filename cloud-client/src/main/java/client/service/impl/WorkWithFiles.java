@@ -27,7 +27,6 @@ public class WorkWithFiles implements WithFileWorkable {
         byte[] bytes = createByteArrayFromFile(Paths.get(source));
         return new FileUpload(nameFile, path, bytes);
     }
-
     private  static byte[] createByteArrayFromFile(Path path){
         byte[] bytes = {};
         try {
@@ -44,7 +43,6 @@ public class WorkWithFiles implements WithFileWorkable {
             e.printStackTrace();
         }
     }
-
     @Override
     public String openDirectoryService(String s) {
         File directory = new File(s);

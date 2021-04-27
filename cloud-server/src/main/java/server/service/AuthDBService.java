@@ -1,6 +1,7 @@
 package server.service;
 
 public interface AuthDBService {
+
     // выдает имя по логину и паролю
     String getNicknameByLoginAndPassword(String login, String password);
    // регистрирует по логину и паролю

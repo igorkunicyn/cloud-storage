@@ -73,7 +73,6 @@
                 text="Копировать" onAction="#copyFileUseButton"/>
         <Button mnemonicParsing="false" HBox.hgrow="ALWAYS" prefHeight="37.0" prefWidth="300.0"
                 onAction="#openDirectoryUseButton" text="Открыть" />
-
     </HBox>
    </children>
 </VBox>

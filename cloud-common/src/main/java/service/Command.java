@@ -11,6 +11,7 @@ public enum Command {
     Command(String instruction){
         this.instruction=instruction;
     }
+
     public String getInstruction(){
         return instruction;
     }

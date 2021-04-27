@@ -1,6 +1,7 @@
 package client.service;
 
 public interface WithFileWorkable {
+
     String  openDirectoryService(String path);
     void createDirectoryAndFileService(String path);
     void deleteDirectoryAndFileService(String path);

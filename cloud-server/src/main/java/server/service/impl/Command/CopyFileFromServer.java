@@ -23,7 +23,6 @@ public class CopyFileFromServer implements FileProcessable {
         byte[] bytes = SQLHandler.getFileFromStorage(nickname,name_file,path);
         return new FileUpload(name_file,target,bytes);
     }
-
     @Override
     public String getCommand() {
         return Command.COPY.getInstruction();

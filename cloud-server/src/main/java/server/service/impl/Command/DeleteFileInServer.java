@@ -23,7 +23,6 @@ public class DeleteFileInServer implements FileProcessable {
         SQLHandler.getDeleteFromStorage(nickname,name_file,path);
         return new FileUpload(Command.DELETE.getInstruction(),command,bytes);
     }
-
     @Override
     public String getCommand() {
         return Command.DELETE.getInstruction();

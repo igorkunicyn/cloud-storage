@@ -25,7 +25,6 @@ public class RegClientCommand implements CommandService {
         }
         return Command.REG_NO.getInstruction();
     }
-
     @Override
     public String getCommand() {
         return Command.REG.getInstruction();

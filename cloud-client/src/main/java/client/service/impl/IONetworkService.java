@@ -33,7 +33,6 @@ public class IONetworkService implements NetworkService {
             e.printStackTrace();
         }
     }
-
     private static void initializeIOStreams() {
         try {
             out = new ObjectEncoderOutputStream(socket.getOutputStream());
@@ -53,7 +52,6 @@ public class IONetworkService implements NetworkService {
             e.printStackTrace();
         }
     }
-
     @Override
     public Object readCommandResult() {
         try {
@@ -62,7 +60,6 @@ public class IONetworkService implements NetworkService {
             throw new RuntimeException("Read command result exception: " + e.getMessage());
         }
     }
-
     @Override
     public void closeConnection() {
         try {

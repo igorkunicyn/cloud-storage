@@ -100,7 +100,6 @@ public class SQLHandler {
         }
     }
 
-
 // добавляет в базу данных файлы и сведения о их местоположении
     public static boolean addFiles(String nickname, String name_file, String path, byte[] file) {
         try {

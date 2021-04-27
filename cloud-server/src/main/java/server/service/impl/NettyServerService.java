@@ -18,7 +18,6 @@ public class NettyServerService implements ServerService {
 
        private static final int SERVER_PORT = 8189;
        private AuthDBService authDBService;
-
        private static NettyServerService instance;
 
        public static NettyServerService getInstance() {

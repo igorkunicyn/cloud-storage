@@ -10,7 +10,6 @@ public class ServerNettyHandler extends ChannelInboundHandlerAdapter {
 
    @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
-
        if (msg.getClass()== FileUpload.class){
 // попадаем сюда при копировании или перемещении файлов с компьютера в хранилище
             System.out.println("Ok");

@@ -264,7 +264,6 @@ public class Controller implements Initializable {
         }
         updateWorkClientWindows(currentTextField,currentTextArea,currentTextField.getText());
     }
-
     private void updateWorkClientWindows(TextField textField, TextArea textArea, String dirPath){
         textArea.clear();
         String path;
@@ -282,14 +281,12 @@ public class Controller implements Initializable {
         }
         return rightTextField;
     }
-
     private TextArea determineWorkedTextArea(TextField textField){
         if (textField.equals(leftTextField)){
             return leftTextArea;
         }
         return rightTextArea;
     }
-
     @FXML
     public void createFileUseButton(ActionEvent actionEvent){
         TextField currentTextField = determineWorkedTextField();

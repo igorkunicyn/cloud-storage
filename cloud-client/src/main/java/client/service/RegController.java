@@ -25,7 +25,6 @@ public class RegController {
         String nickname = nicknameField.getText().trim();
         controller.tryToReg(login, password, nickname);
     }
-
     public void regOk(){
         textArea.appendText("Регистрация прошла успешно\n");
     }

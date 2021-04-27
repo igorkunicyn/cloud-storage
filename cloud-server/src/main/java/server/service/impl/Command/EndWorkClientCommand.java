@@ -14,7 +14,6 @@ public class EndWorkClientCommand implements CommandService {
     public String processCommand(String str) {
         return Command.END.getInstruction();
     }
-
     @Override
     public String getCommand() {
         return Command.END.getInstruction();

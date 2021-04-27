@@ -3,15 +3,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import java.net.URL?>
 <?import javafx.scene.control.PasswordField?>
 <VBox fx:controller="client.service.RegController"
       xmlns:fx="http://javafx.com/fxml" alignment="center">
-
-<!--    <stylesheets>-->
-<!--        <URL value="@/css/style.css"/>-->
-<!--    </stylesheets>-->
-
 
     <TextField fx:id="loginField" promptText="login"/>
     <PasswordField fx:id="passwordField" promptText="password"/>
