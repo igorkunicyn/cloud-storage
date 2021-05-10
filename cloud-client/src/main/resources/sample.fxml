@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="401.0" prefWidth="576.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="200.0"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller">
+   <children>
+       <HBox fx:id="authPanel" >
+           <TextField fx:id="loginField" HBox.hgrow="ALWAYS" promptText="login" minHeight="50"/>
+           <PasswordField fx:id="passwordField" HBox.hgrow="ALWAYS"
+                          promptText="password" onAction="#tryToAuth" minHeight="50"/>
+           <Button text="login" onAction="#tryToAuth" minWidth="100" minHeight="50"/>
+           <Button text="reg" onAction="#registration" minWidth="80" minHeight="50"/>
+       </HBox>
+           <MenuBar fx:id="menuBarPanel" prefHeight="4.0" prefWidth="758.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файлы">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Открыть" />
+                  <MenuItem mnemonicParsing="false" text="Сохранить" />
+              <MenuItem mnemonicParsing="false" text="Закрыть" />
+                  <MenuItem mnemonicParsing="false" text="Выход" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Редактирование">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Переместить" />
+                  <MenuItem mnemonicParsing="false" text="Переименовать" />
+              <MenuItem mnemonicParsing="false" text="Удалить" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" text="О программе" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+        <HBox VBox.vgrow="ALWAYS">
+            <SplitPane fx:id="splitPanel" dividerPositions="0.48327759197324416" VBox.vgrow="ALWAYS" prefHeight="574.0" prefWidth="783.0">
+                <items>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                        <children>
+                            <TextField fx:id="leftTextField" prefHeight="25.0" prefWidth="274.0" AnchorPane.leftAnchor="5.0"
+                             AnchorPane.rightAnchor="5.0" onAction="#readCommandOnStage"/>
+                            <TextArea fx:id="leftTextArea" prefHeight="200.0" prefWidth="210.0"
+                             AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                             AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="284.0">
+                        <children>
+                            <TextField fx:id="rightTextField" layoutX="4.0"  prefHeight="25.0" prefWidth="290.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                            <TextArea fx:id="rightTextArea" prefHeight="319.0" prefWidth="294.0"
+                             AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                             AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                        </children>
+                    </AnchorPane>
+                </items>
+            </SplitPane>
+            <TextArea fx:id="textArea" HBox.hgrow="ALWAYS" editable="false"/>
+        </HBox>
+    <HBox fx:id="buttonPanel" visible="false" managed="false" VBox.vgrow="ALWAYS" prefHeight="38.0" prefWidth="774.0">
+        <Button mnemonicParsing="false"  HBox.hgrow="ALWAYS"  prefHeight="37.0"
+                prefWidth="300.0" text="Создать" onAction="#createFileUseButton"/>
+        <Button mnemonicParsing="false" HBox.hgrow="ALWAYS" prefHeight="37.0" prefWidth="300.0"
+                text="Удалить" onAction="#deleteFileAndDirectoryUseButton" />
+        <Button mnemonicParsing="false" HBox.hgrow="ALWAYS" prefHeight="37.0" prefWidth="300.0"
+                text="Переместить" onAction="#moveFileUseButton"/>
+        <Button mnemonicParsing="false" HBox.hgrow="ALWAYS" prefHeight="37.0" prefWidth="300.0"
+                text="Копировать" onAction="#copyFileUseButton"/>
+        <Button mnemonicParsing="false" HBox.hgrow="ALWAYS" prefHeight="37.0" prefWidth="300.0"
+                onAction="#openDirectoryUseButton" text="Открыть" />
+    </HBox>
+   </children>
+</VBox>
